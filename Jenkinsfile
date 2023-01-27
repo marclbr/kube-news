@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy kubernetes') {
             steps {
                 withKubeConfig ([credentialsId: 'kubeconfig']) {
-                    sh 'kubectl apply -f ./mnt/c/Users/Marcio Lima/Documents/FabricioVeronez/Aula2 - Kubernetes/kube-news/k8s/deployment.yaml'
+                    sh 'kubectl apply -f ./Aula2 - Kubernetes/kube-news/k8s/deployment.yaml'
                 }
             }
         }
